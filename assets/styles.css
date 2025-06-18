@@ -1,0 +1,409 @@
+/* Reset y configuraciones base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #2d3436;
+    line-height: 1.7;
+}
+
+/* Variables para colores */
+:root {
+    --primary-green: #1a3c34; /* Verde Tayrona */
+    --accent-gold: #f4a261; /* Dorado Tayrona */
+    --hover-coral: #e76f51; /* Coral para interacción */
+    --light-bg: #ffffff; /* Fondo claro */
+    --text-dark: #2d3436; /* Texto oscuro */
+    --text-light: #dfe6e9; /* Texto claro */
+}
+
+/* Header */
+header {
+    background-color: var(--primary-green);
+    color: var(--text-light);
+    padding: 1.5rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+}
+
+header h1 {
+    font-size: 2.2rem;
+    text-align: center;
+    font-weight: 700;
+}
+
+header nav {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 0.75rem;
+}
+
+header nav a {
+    color: var(--text-light);
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+header nav a:hover {
+    color: var(--accent-gold);
+    transform: translateY(-2px);
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(rgba(26, 60, 52, 0.6), rgba(26, 60, 52, 0.6)), url('fondo-tayrona.jpg') no-repeat center center/cover;
+    min-height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--text-light);
+    padding: 3rem 2rem;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    animation: fadeIn 1s ease-in;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    max-width: 600px;
+    margin-bottom: 2rem;
+}
+
+.hero a{
+    text-decoration: none;
+    color: white;
+}
+.hero button {
+    background-color: var(--accent-gold);
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    color: var(--text-light);
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.hero button:hover {
+    background-color: var(--hover-coral);
+    transform: scale(1.05);
+}
+
+/* Coders Section */
+.coders {
+    padding: 3rem 2rem;
+    background-color: var(--light-bg);
+    text-align: center;
+}
+
+.coders h2 {
+    font-size: 2.5rem;
+    color: var(--primary-green);
+    margin-bottom: 2rem;
+}
+
+.coder-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.coder-card {
+    background-color: var(--light-bg);
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    padding: 1.5rem;
+    transition: transform 0.3s ease;
+}
+
+.coder-card:hover {
+    transform: translateY(-5px);
+}
+
+.coder-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.coder-card h3 {
+    font-size: 1.3rem;
+    color: var(--primary-green);
+    margin-bottom: 0.5rem;
+}
+
+.coder-card p {
+    font-size: 0.9rem;
+    color: var(--text-dark);
+    margin-bottom: 1rem;
+}
+
+.coder-card a {
+    color: var(--accent-gold);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.coder-card a:hover {
+    color: var(--hover-coral);
+}
+
+/* Projects Section */
+.projects {
+    padding: 3rem 2rem;
+    background-color: #f8f9fa;
+    text-align: center;
+}
+
+.projects h2 {
+    font-size: 2.5rem;
+    color: var(--primary-green);
+    margin-bottom: 2rem;
+}
+
+.project-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.project-card {
+    background-color: var(--light-bg);
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    padding: 1.5rem;
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.project-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.project-card h3 {
+    font-size: 1.3rem;
+    color: var(--primary-green);
+    margin-bottom: 0.5rem;
+}
+
+.project-card p {
+    font-size: 0.9rem;
+    color: var(--text-dark);
+}
+
+/* Convenios Section */
+.convenios {
+    padding: 3rem 2rem;
+    background-color: var(--primary-green);
+    color: var(--text-light);
+    text-align: center;
+}
+
+.convenios h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.convenios p {
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: 0 auto 2rem;
+}
+
+.convenios button {
+    background-color: var(--accent-gold);
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    color: var(--text-light);
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.convenios button:hover {
+    background-color: var(--hover-coral);
+    transform: scale(1.05);
+}
+
+/* Contacto Section */
+.contacto {
+    padding: 3rem 2rem;
+    background-color: var(--light-bg);
+    text-align: center;
+}
+
+.contacto h2 {
+    font-size: 2.5rem;
+    color: var(--primary-green);
+    margin-bottom: 2rem;
+}
+
+.contacto form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contacto input, .contacto textarea {
+    padding: 0.8rem;
+    font-size: 1rem;
+    border: 1px solid #dfe6e9;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.contacto input:focus, .contacto textarea:focus {
+    border-color: var(--accent-gold);
+}
+
+.contacto textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.contacto button {
+    background-color: var(--primary-green);
+    border: none;
+    padding: 1rem;
+    font-size: 1.2rem;
+    color: var(--text-light);
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.contacto button:hover {
+    background-color: var(--hover-coral);
+}
+
+/* WhatsApp Button */
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25d366;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    transition: transform 0.3s ease;
+}
+
+.whatsapp-button img {
+    width: 100%;
+    height: auto;
+    border-radius: 100px;
+}
+
+.whatsapp-button:hover {
+    transform: scale(1.1);
+}
+
+/* Footer */
+footer {
+    background-color: var(--primary-green);
+    color: var(--text-light);
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 2rem;
+}
+
+footer p {
+    font-size: 0.9rem;
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1.2rem;
+    }
+
+    .hero button {
+        padding: 0.8rem 1.5rem;
+        font-size: 1rem;
+    }
+
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    header nav {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .coder-card, .project-card {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .convenios p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        min-height: 60vh;
+        padding: 2rem 1rem;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .coders h2, .projects h2, .convenios h2, .contacto h2 {
+        font-size: 2rem;
+    }
+}
