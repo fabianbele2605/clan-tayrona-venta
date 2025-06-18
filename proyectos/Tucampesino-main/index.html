@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título que aparece en la pestaña del navegador -->
+    <title>CampoExpress</title>
+    <!-- Enlace al archivo CSS para estilos -->
+    <link rel="stylesheet" href="./assets/index.css">
+</head>
+<!-- Cuerpo del documento - todo el contenido visible -->
+<body>
+    <header>
+        <!-- Encabezado de la página -->
+        <a href="./index.html">CampoExpress</a>
+        <!-- Barra de navegación principal -->
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#tienda">Tienda</a></li>
+                <!--AL darle click salimos de la pagina y volvemos al login-->
+                <li><a href="./login.html">Exit</a></li>
+            </ul>
+        </nav>
+    </header>
+     <!-- Contenido principal de la página -->
+    <main>
+        <!--esta es la setcion de agricultores -->
+        <section>
+        <div class="hero">
+        <div class="promo">
+            <h2>Quieres Ayudar a Nuestro Agricultores. </h2>
+            <p>Aqui puedes conocer y comprar sus productos agricolas 🥬​🍉​🍊​🍌​🍍​🌽​🥕​🥔​</p>
+            <!--Aqui al darle click no enlaza nada -->
+            <button type="submit"><a href="./index.html" target="_blank">Quiero Conocer y comprar ⭐​</a></button>
+        </div>
+        <!--Aqui insertamos nuestro video de fondo-->
+        <video id="video-fondo" muted autoplay loop>
+            <source src="./img/3365440-uhd_3840_2160_30fps.mp4"
+            type="video/mp4">
+        </video>
+        <div class="capa"></div>
+        </div>
+        </section>
+        <!--esta es la setcion de ganaderos-->
+        <section>
+            <div class="hero">
+            <div class="promo">
+                <h2>Quieres Ayudar a Nuestros Ganaderos. </h2>
+                <p>Aqui puedes conocer y comprar sus productos pecuarios 🐓​🐖​🐄​</p>
+                <!--Aqui al darle click se quedara en la misma pagina,porque ya lo demas es otro proyecto propio mio-->
+                <button type="submit"><a href="./index.html">Quiero conocer y comprar ⭐​</a></button>
+            </div>
+            <!--Aqui insertamos un segundo video de la setcion de ganaderos-->
+            <video muted autoplay loop>
+                <source src="./img/4196251-hd_1920_1080_24fps.mp4" type="video/mp4">
+            </video>
+            </div>
+        </section> 
+    </main>
+    <!-- Pie de página -->
+    <footer>
+        <div class="iframe">
+            <!-- Sección de redes sociales -->
+            <h3>Nuestros Canales</h3>
+            <!--Aqui no enlaze ninguna red social-->
+            <img src="./img/Twitter_X.png" alt="X">
+            <img src="./img/facebook.png" alt="Facebook">
+            <img src="./img/Instagram_logo_2022.svg.png" alt="Instagram">
+        </div>
+    </footer>
+    <!--Aqui importamos el archivo js para que cumpal la condicion de login.html y pase a este index.html-->
+    <script src="./js/login.js"></script>
+</body>
+</html>

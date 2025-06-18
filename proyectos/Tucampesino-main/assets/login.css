@@ -1,0 +1,63 @@
+/* Estilos para el cuerpo del documento */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-image: url(../img/pexels-quang-nguyen-vinh-222549-2131784.jpg);
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+/* Estilo del enbazado "Login" de la pagina */
+h1 {
+    color: rgb(212, 238, 95);
+}
+
+main{ 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* estilo de la seccion donde se ingresaran los datos o valores */
+section {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+    padding: 25px 20px;
+    border-radius: 8%;
+}
+
+label {
+    color: rgb(212, 238, 95);
+    font-size: large;
+    font-style: italic;
+    font-weight: 100;
+}
+
+input {
+    color: rgb(212, 238, 95);
+    border-radius: 4px;
+    border: none;
+    background-color: white;
+}
+
+
+div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    font-size: large;
+    font-style: italic;
+    background-color: rgb(212, 238, 95);
+}
+
+
+a {
+    color: rgb(212, 238, 95);
+    
+}
